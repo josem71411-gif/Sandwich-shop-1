@@ -26,7 +26,10 @@ public class SandwichShop {
         } else if (age>= 65) {
             price = price * 0.80; // this is 20%
         }
+// step 4: Displaying results
+        System.out.printf("Your sandiwch costs: $%.2f\n", price);
 
+        scanner.close();
     }
 
 }
