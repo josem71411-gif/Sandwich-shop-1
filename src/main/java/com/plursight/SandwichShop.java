@@ -8,15 +8,28 @@ public class SandwichShop {
  int size = scanner.nextInt();
 
  double price = 0;
+ double loadedPrice = 0;
 
  if (size == 1) {
      price = 5.45;
+     loadedPrice = 1.00;
  } else if (size == 2) {
      price = 8.95;
+     loadedPrice = 1.00;
  } else {
      System.out.println(("invalid Size Selected."));
      return;
  }
+
+ // Step 1.5: asking if they want it Loaded
+        scanner.nextLine();
+        System.out.print("Would you like the sandwich loaded? (yes/no):  ");
+        String isLoaded = scanner.nextLine();
+
+        if (isLoaded.equalsIgnoreCase("yes")){
+            price += loadedPrice;
+        }
+
  // Step 2: Asking for age
         System.out.print("Enter your age:  ");
         int age = scanner.nextInt();
