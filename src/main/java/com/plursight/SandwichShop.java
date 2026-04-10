@@ -17,6 +17,12 @@ public class SandwichShop {
      System.out.println(("invalid Size Selected."));
      return;
  }
+ // Step 2: Asking for age
+        System.out.print("Enter your age:  ");
+        int age = scanner.nextInt();
+// Step 3: Apply Discount
+
+
     }
 
 }
