@@ -7,6 +7,16 @@ public class SandwichShop {
  System.out.print("enter sandwich size (1= Regular, 2 = Large): ");
  int size = scanner.nextInt();
 
+ double price = 0;
+
+ if (size == 1) {
+     price = 5.45;
+ } else if (size == 2) {
+     price = 8.95;
+ } else {
+     System.out.println(("invalid Size Selected."));
+     return;
+ }
     }
 
 }
